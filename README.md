@@ -21,7 +21,7 @@ This project has been made with the help of the api.video API (https://api.video
 
 ## How to use
 
-Change the API Key which is located on the uploader.component.jsx file.
+Change the Access Token which is located on the uploader.component.jsx file.
 
 uploader.component.jsx
 
@@ -36,12 +36,12 @@ constructor() {
       totalPercentComplete: 0,
       showProgressBar: false,
       // Change your API key here
-      apiKey: "to6IC1ehLEWyGyLbpa9HqOrW",
+      accessToken: "YOUR_ACCESS_TOKEN",
     };
   }
 ```
 
-You can ask for an API key on the Authenticate Page (https://docs.api.video/reference/post_auth-api-key) once you're registered on the platform.
+You can ask for an access token after you submit your API key on the Authenticate Page (https://docs.api.video/reference/post_auth-api-key) once you're registered on the platform.
 
 Then you just need to click on the input (or the choose file button) and choose the video you want to upload. After that, uou should see a progress bar and a final success message with the link to see the video.
 

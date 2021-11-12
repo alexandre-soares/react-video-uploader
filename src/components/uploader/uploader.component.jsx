@@ -14,7 +14,7 @@ class Uploader extends Component {
       totalPercentComplete: 0,
       showProgressBar: false,
       // Change your API key here
-      apiKey: "to6IC1ehLEWyGyLbpa9HqOrW",
+      accessToken: "YOUR_ACCESS_TOKEN",
     };
   }
 
@@ -23,7 +23,7 @@ class Uploader extends Component {
     // start uploading
     const uploader = new VideoUploader({
       file: event.target.files[0],
-      uploadToken: this.state.apiKey,
+      uploadToken: this.state.accessToken,
       chunkSize: 1024 * 1024 * 10, // 10MB
       retries: 10,
     });
