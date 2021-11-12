@@ -29,6 +29,8 @@ class Uploader extends Component {
 
     // on progress to track uploading process (progress bar)
     uploader.onProgress((event) => {
+      console.log(uploader);
+      console.log(event);
       // show progress bar
       this.setState({
         showProgressBar: true,
@@ -55,12 +57,12 @@ class Uploader extends Component {
 
   render() {
     return (
-      <div className="Uploader">
+      <div className="uploader">
         <div id="action__upload">
           <img
             id="uploadFile__icon"
             draggable="false"
-            src="../../icons/upload.png"
+            src="../../icons/cloud-uploads.png"
             alt="upload"
             className="Icon"
           />
@@ -74,13 +76,15 @@ class Uploader extends Component {
               id="video-file-label"
               className="form-label"
             >
-              Click on the input below to upload a video
+              Click on the input below to upload a video (only video types
+              allowed)
             </label>
             <input
               className="form-control"
               onChange={this.uploadFile}
               type="file"
               id="video-file"
+              accept="video/*"
             />
           </div>
 
