@@ -21,7 +21,18 @@ This project has been made with the help of the api.video API (https://api.video
 
 ## How to use
 
-Change the Access Token which is located on the uploader.component.jsx file.
+Change the upload token which is located on the uploader.component.jsx file and then run npm start.
+You should access the application on http://localhost:3000, then you just need to click on the input (or the choose file button) and choose the video you want to upload. After that, you should see a progress bar and a final success message with the link to see the video.
+
+You should also be able to access all your uploaded videos on this link (https://go.api.video/?title=&sortOrder=desc&sortBy=publishedAt)
+
+# How to generate the upload token
+
+1. Register on the api.video platform (https://dashboard.api.video/login)
+2. Once registered, go on your dashboard (https://dashboard.api.video/apikeys) and copy your Sandbox API key
+3. Then go on the Authenticate page (https://docs.api.video/reference/post_auth-api-key) and submit your API key in the body of your request. api.video returns an access token that is valid for one hour (3600 seconds)
+4. Copy the access token and go on the Generate an upload token (https://docs.api.video/reference/post_upload-tokens) and use this endpoint to generate an upload token
+5. Replace "YOUR_UPLOAD_TOKEN" with the token you received 
 
 uploader.component.jsx
 
@@ -36,13 +47,9 @@ constructor() {
       totalPercentComplete: 0,
       showProgressBar: false,
       // Change your API key here
-      accessToken: "YOUR_ACCESS_TOKEN",
+      uploadToken: "YOUR_UPLOAD_TOKEN",
     };
   }
 ```
-
-You can ask for an access token after you submit your API key on the Authenticate Page (https://docs.api.video/reference/post_auth-api-key) once you're registered on the platform.
-
-Then you just need to click on the input (or the choose file button) and choose the video you want to upload. After that, uou should see a progress bar and a final success message with the link to see the video.
 
 Enjoy!

@@ -14,7 +14,7 @@ class Uploader extends Component {
       totalPercentComplete: 0,
       showProgressBar: false,
       // Change your API key here
-      accessToken: "YOUR_ACCESS_TOKEN",
+      uploadToken: "toHFQ3M0sJMGQ9l4ZEM1J3r",
     };
   }
 
@@ -23,21 +23,23 @@ class Uploader extends Component {
     // start uploading
     const uploader = new VideoUploader({
       file: event.target.files[0],
-      uploadToken: this.state.accessToken,
+      uploadToken: this.state.uploadToken,
       chunkSize: 1024 * 1024 * 10, // 10MB
       retries: 10,
     });
 
     // on progress to track uploading process (progress bar)
     uploader.onProgress((event) => {
-      console.log(uploader);
-      console.log(event);
+
+      /* console.log(uploader); */
+      /* console.log(event); */
+
       // show progress bar
       this.setState({
         showProgressBar: true,
       });
 
-      // define percentage uploading progress
+      // display percentage uploading progress
       this.setState({
         totalPercentComplete: Math.round(
           (event.uploadedBytes / event.totalBytes) * 100
