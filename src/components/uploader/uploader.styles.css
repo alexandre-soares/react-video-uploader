@@ -13,3 +13,11 @@
   padding: 0 !important;
   height: auto !important;
 }
+
+.form {
+  margin: 20px auto;
+}
+
+.progress {
+  margin: 10px auto;
+}
