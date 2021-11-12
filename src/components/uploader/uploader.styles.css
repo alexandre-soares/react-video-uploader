@@ -1,0 +1,15 @@
+.Icon {
+  height: 100px;
+  width: 100px;
+}
+
+.alert:empty {
+  display: none;
+}
+
+.form-control {
+  cursor: pointer !important;
+  width: 400px;
+  padding: 0 !important;
+  height: auto !important;
+}
