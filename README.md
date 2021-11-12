@@ -41,7 +41,7 @@ constructor() {
 
 Enjoy!
 
-# Done Features
+# Completed Features
 
 - Upload a video 
 - Progress Bar to check progress
