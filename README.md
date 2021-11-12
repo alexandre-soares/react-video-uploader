@@ -41,4 +41,8 @@ constructor() {
   }
 ```
 
-You can ask for an API key on the Authenticate Page (https://docs.api.video/reference/post_auth-api-key) once you're registered
+You can ask for an API key on the Authenticate Page (https://docs.api.video/reference/post_auth-api-key) once you're registered on the platform.
+
+Then you just need to click on the input (or the choose file button) and choose the video you want to upload. After that, uou should see a progress bar and a final success message with the link to see the video.
+
+Enjoy!
