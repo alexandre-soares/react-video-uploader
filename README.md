@@ -2,19 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-
 ## Learn More
 
 This project has been made with the help of the api.video API (https://api.video/)
@@ -56,15 +43,15 @@ Enjoy!
 
 # Done Features
 
-Upload a video 
-Progress Bar to check progress
-Alert message when success
+- Upload a video 
+- Progress Bar to check progress
+- Alert message when success
 
 # To do Features
 
-Adding Typescript
-Drag and drop system
-Display error messages if there are
-Multiple uploads at the same time
-Better UI
-Upload other types of files (if needed)
+- Adding Typescript
+- Drag and drop system
+- Display error messages if there are
+- Multiple uploads at the same time
+- Better UI
+- Upload other types of files (if needed)
