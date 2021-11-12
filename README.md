@@ -53,3 +53,18 @@ constructor() {
 ```
 
 Enjoy!
+
+# Done Features
+
+Upload a video 
+Progress Bar to check progress
+Alert message when success
+
+# To do Features
+
+Adding Typescript
+Drag and drop system
+Display error messages if there are
+Multiple uploads at the same time
+Better UI
+Upload other types of files (if needed)
