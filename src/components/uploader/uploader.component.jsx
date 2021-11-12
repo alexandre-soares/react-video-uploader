@@ -13,6 +13,7 @@ class Uploader extends Component {
       playerUrl: "",
       totalPercentComplete: 0,
       showProgressBar: false,
+      // Change your API key here
       apiKey: "to6IC1ehLEWyGyLbpa9HqOrW",
     };
   }
